@@ -3,7 +3,7 @@ body{
     display: flex;
     background-color: indigo;
     justify-content: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #calculator{
@@ -32,6 +32,7 @@ body{
     color:white;
     justify-content: flex-end;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 #grid{
@@ -53,6 +54,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 .nums:hover{
@@ -65,6 +67,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 .nums:active{
@@ -77,6 +80,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 .op{
@@ -89,6 +93,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 .op:hover{
@@ -101,6 +106,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 .op:active{
@@ -113,6 +119,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 #equal{
@@ -125,6 +132,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 #equal:hover{
@@ -137,6 +145,7 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
 
 #equal:active{
@@ -149,4 +158,5 @@ body{
     justify-content: center;
     border-radius: 20px;
     box-shadow: 4px 2px 0px 0px white;
+    margin: 0 1% 0 0;
 }
