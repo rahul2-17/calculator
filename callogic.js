@@ -1,38 +1,42 @@
-let nums=document.querySelectorAll(".nums");
+let display = document.querySelector("#display");
+let buttons = document.querySelectorAll(".nums, .op, #equal, #opC");
 
-let display=document.querySelector("#display")
-let op=document.querySelectorAll(".nums, .op, #equal, #opC");
+let curInput = "";
 
-let curInput="";
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        let val = this.textContent;
 
-nums,op.forEach(button => {
-    button.addEventListener("click", function(){
-        let val=this.textContent;
-
-        if(!isNaN(val)){
-            curInput+=val;
-            display.textContent=curInput;
+        if (!isNaN(val) || val === ".") {
+            curInput += val;
+            display.textContent = curInput;
         }
-
-        else if(val==="C"){
-            display.textContent="";
-            curInput="";
+        
+        else if (val === "C") {
+            curInput = "";
+            display.textContent = "";
         }
-
-        else if(val=="="){
-            try{
-                curInput=eval(curInput).toString();
-            }
-            catch{
-                curInput="";
-                display.textContent="Error";
+        
+        else if (val === "=") {
+            try {
+                curInput = Function(`return ${curInput}`)().toString();
+            } catch {
+                curInput = "";
+                display.textContent = "Error";
+                return;
             }
         }
+        
+        else {
+            let lastChar = curInput[curInput.length - 1];
 
-        else{
-            curInput+=val;
+            if (["+", "-", "*", "/"].includes(lastChar) && ["+", "-", "*", "/"].includes(val)) {
+                return;
+            }
+
+            curInput += val;
         }
 
-        display.textContent=curInput;
+        display.textContent = curInput;
     });
 });
